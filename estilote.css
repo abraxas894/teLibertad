@@ -1,0 +1,433 @@
+:root{
+    --colorTxt: #FFDAB9; /* PeachPuff */
+    --colorA: #DEB887; /* BurlyWood */
+    --colorB: #F08080; /* LightCoral */
+    --colorC: #8a0f5d; /* */
+    --colorD: #fce8f5;
+    --Negro: #292929;
+    --blanco: #FFF5EE; /* SeaShell */
+}
+body{
+    background-color: var(--Negro);
+    width: 90%;
+    margin: 0% 5%;
+}
+h1{
+    font: normal 3em/1.2em "Amita", serif;
+}
+h2{
+    font: normal 2em/1.2em "Rosarivo", serif;
+}
+p{
+    font: normal 1.4em/1.2em "Rosarivo", serif;
+}
+.barraNav{
+    width: 100%;
+    background-color: var(--);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.barraNav h1{
+    color: var(--colorTxt);
+    padding: 2% 3%;
+    border-style: solid;
+    border-width: 10px 30px;
+    border-color: var(--colorB);
+    width: 50%;
+    text-align: center;
+}
+.navegador{
+    width: 30%;
+}
+.navegador li{
+    list-style-type: none;
+}
+.navegador li a{
+    font: normal .9em/1.4em "Rosarivo", serif;
+    text-decoration-line: none;
+    color: var(--colorTxt);
+    padding: 1% 5%;
+}
+.navegador li a:hover{
+    color: var(--colorD);
+    background-color: var(--colorB);
+}
+.cita{
+    width: 50%;
+    height: 100px;
+    margin: 3% 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cita p{
+    margin: 0% 0%;
+    padding: 2% 5%;
+    color: var(--blanco);
+}
+p.tacita{
+    font: normal 3em/1.2em "dingCafe", serif;
+    color: var(--colorTxt);
+    padding: 2% 0%;
+}
+.sobreTe{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Negro);
+    background-image: url(img/tazaTe.jpg);
+    background-blend-mode: luminosity;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+.sobreTxt{
+    background-color: rgba(25, 25, 25, .6);
+    padding: 5%;
+    color: var(--blanco);
+    animation-name: fondoTe;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+@keyframes fondoTe{
+    0% {background-color: rgba(25, 25, 25, .6);}
+    50% {background-color: rgba(255, 0, 0, .2);}
+    100% {background-color: rgba(25, 25, 25, .6);}
+}
+.sobreTxt h2{
+    font: normal small-caps normal 2em/1.2em "Aclonica", serif;
+    text-align: center;
+    margin: 1% 0%;
+}
+.sobreTxt p{
+    font: normal small-caps normal 1.4em/1.2em "Rosarivo", serif;
+    text-align: center;
+    margin: 0% 0%;
+}
+.sobreTe:hover{
+    background-blend-mode: screen;
+}
+#menu{
+    width: 100%;
+    margin: 0% 0%;
+}
+#menu h2{
+    margin: 0%;
+    padding: 2% 5%;
+    background-color: var(--colorB);
+    color: var(--);
+    text-align: right;
+    border-radius: 20px 20px 0px 0px;
+}
+.infusiones{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.infusiones div{
+    flex: 50%;
+    margin: 0% 0%;
+}
+.infusiones div img{
+    width: 100%;
+}
+.txtMitad{
+    position: relative;
+}
+.txtMitad p{
+    background-color: rgba(25, 0, 0, .5);
+    color: var(--blanco);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0% 0%;
+    padding: 3%;
+}
+.servirTe{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cadaSer{
+    flex: 33.33%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cadaSer:nth-child(2n){
+    align-items: center;
+}
+.cadaSer:nth-child(3n){
+    align-items: flex-end;
+}
+.cadaSer p{
+    padding: 3% 5%;
+    color: var(--blanco);
+    text-align: center;
+    background-color: rgba(255, 0, 0, .2);
+}
+.ornamentaTe{
+    font-family: "dingCafe";
+    font-size: 2em;
+}
+.listonA{
+    width: 100%;
+    margin: 2% 0%;
+}
+.listonA p{
+    color: var(--colorTxt);
+    margin: 0%;
+    text-align: right;
+}
+#locaciones{
+    width: 100%;
+}
+#locaciones iframe{
+    width: 500px;
+}
+.piePagina{
+    width: 100%;
+    margin: 2% 0%;
+    padding: 2% 0%;
+    background-color: var(--colorB);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30% 0% 30% 0%;
+}
+.piePagina img{
+    width: 10%;
+}
+.piePagina .redes a{
+    color: var(--Negro);
+    font-size: 1.2em;
+    text-align: center;
+}
+@font-face{
+    font-family: "tazaCafe";
+    src: url(fonts/coffeeCup.ttf);
+}
+@font-face{
+    font-family: "dingCafe";
+    src: url(fonts/esCafe.otf);
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: var(--Negro);
+        width: 100%;
+        margin: 0% 0%;
+    }
+    h1{
+        font: normal 3em/1.2em "Amita", serif;
+    }
+    h2{
+        font: normal 2em/1.2em "Rosarivo", serif;
+    }
+    p{
+        font: normal 1.4em/1.2em "Rosarivo", serif;
+    }
+    .barraNav{
+        width: 100%;
+        background-color: var(--);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .barraNav h1{
+        color: var(--colorTxt);
+        padding: 2% 3%;
+        border-style: solid;
+        border-width: 10px 30px;
+        border-color: var(--colorB);
+        width: 50%;
+        text-align: center;
+    }
+    .navegador{
+        width: 30%;
+    }
+    .navegador li{
+        list-style-type: none;
+    }
+    .navegador li a{
+        font: normal .9em/1.4em "Rosarivo", serif;
+        text-decoration-line: none;
+        color: var(--colorTxt);
+        padding: 1% 5%;
+    }
+    .navegador li a:hover{
+        color: var(--colorD);
+        background-color: var(--colorB);
+    }
+    .cita{
+        width: 80%;
+        height: 150px;
+        margin: 3% 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cita p{
+        margin: 0% 0%;
+        padding: 2% 5%;
+        color: var(--blanco);
+    }
+    p.tacita{
+        font: normal 3em/1.2em "dingCafe", serif;
+        color: var(--colorTxt);
+        padding: 2% 0%;
+    }
+    .sobreTe{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Negro);
+        background-image: url(img/tazaTe.jpg);
+        background-blend-mode: luminosity;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+    }
+    .sobreTxt{
+        background-color: rgba(25, 25, 25, .6);
+        padding: 5%;
+        color: var(--blanco);
+        animation-name: fondoTe;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes fondoTe{
+        0% {background-color: rgba(25, 25, 25, .6);}
+        50% {background-color: rgba(255, 0, 0, .2);}
+        100% {background-color: rgba(25, 25, 25, .6);}
+    }
+    .sobreTxt h2{
+        font: normal small-caps normal 2em/1.2em "Aclonica", serif;
+        text-align: center;
+        margin: 1% 0%;
+    }
+    .sobreTxt p{
+        font: normal small-caps normal 1.4em/1.2em "Rosarivo", serif;
+        text-align: center;
+        margin: 0% 0%;
+    }
+    .sobreTe:hover{
+        background-blend-mode: screen;
+    }
+    #menu{
+        width: 100%;
+        margin: 0% 0%;
+    }
+    #menu h2{
+        margin: 0%;
+        padding: 2% 5%;
+        background-color: var(--colorB);
+        color: var(--);
+        text-align: right;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .infusiones{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    .infusiones div{
+        flex: 50%;
+        margin: 0% 0%;
+    }
+    .infusiones div img{
+        width: 100%;
+    }
+    .txtMitad{
+        position: relative;
+    }
+    .txtMitad p{
+        background-color: rgba(25, 0, 0, .5);
+        color: var(--blanco);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 0% 0%;
+        padding: 3%;
+    }
+    .servirTe{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cadaSer{
+        flex: 33.33%;
+        height: 300px;
+        background-size: cover;
+        background-position: 50% 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .cadaSer:nth-child(2n){
+        align-items: center;
+    }
+    .cadaSer:nth-child(3n){
+        align-items: flex-end;
+    }
+    .cadaSer p{
+        padding: 3% 5%;
+        color: var(--blanco);
+        text-align: center;
+        background-color: rgba(255, 0, 0, .2);
+    }
+    .ornamentaTe{
+        font-family: "dingCafe";
+        font-size: 2em;
+    }
+    .listonA{
+        width: 100%;
+        margin: 2% 0%;
+    }
+    .listonA p{
+        color: var(--colorTxt);
+        margin: 0%;
+        text-align: right;
+    }
+    #locaciones{
+        width: 100%;
+    }
+    #locaciones iframe{
+        width: 500px;
+    }
+    .piePagina{
+        width: 100%;
+        margin: 2% 0%;
+        padding: 2% 0%;
+        background-color: var(--colorB);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 30% 0% 30% 0%;
+    }
+    .piePagina img{
+        width: 10%;
+    }
+    .piePagina .redes a{
+        color: var(--Negro);
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
