@@ -177,6 +177,10 @@ p.tacita{
     text-align: center;
     background-color: rgba(255, 0, 0, .2);
 }
+.cadaSer:hover{
+	background-color: rgba(255, 135, 0, .5);
+	background-blend-mode: color-dodge;
+}
 .ornamentaTe{
     font-family: "dingCafe";
     font-size: 2em;
